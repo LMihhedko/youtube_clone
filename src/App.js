@@ -1,3 +1,4 @@
+import { ThreeSixtySharp } from '@material-ui/icons';
 import React from 'react';
 import youtube from "./api/youtube";
 import SearchBar from './components/SearchBar';
@@ -19,17 +20,18 @@ import VideoList from './components/VideoList';
     })
 
     this.setState({videos: response.data.items, selectedVideo:response.data.items[0]})
-    console.log(response)
   }
   
-  // handleVideoSelect
+  handleVideoSelect = (video) => {
+    this.state({selectedVideo: video})
+  }
 
 
   render() {
     return (
       <div>
         <SearchBar onFormSubmit = {this.handleSubmit} ></SearchBar>
-        <VideoDetail video = {this.state.selectedVideo}></VideoDetail>
+        <VideoDetail video = {this.state.selectedVideo} handleVideoSelect = {this.handleVideoSelect}></VideoDetail>
       </div>
     );
   }
