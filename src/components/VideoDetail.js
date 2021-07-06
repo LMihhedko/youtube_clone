@@ -3,7 +3,7 @@ import React from 'react';
 function VideoDetail() {
     return (
       <div>
-           <h1>Hola, bienvenido a la página</h1> 
+           <h1>Hola, este es el componente VideoDetail</h1> 
       </div>
      );
    }   

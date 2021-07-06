@@ -18,7 +18,7 @@ import VideoList from './components/VideoList';
 
     })
 
-    console.log(response)
+    this.setState({videos: response.data.items, selectedVideo:response.data.items[0]})
   }
   
   // handleVideoSelect
@@ -26,7 +26,10 @@ import VideoList from './components/VideoList';
 
   render() {
     return (
-    <button onClick={() => this.handleSubmit('react')}>Cargar videos en consola</button>
+      <div>
+      <VideoDetail video = {this.state.selectedVideo}></VideoDetail>
+      <button onClick={() => this.handleSubmit('react')}>Cargar videos en consola</button>
+      </div>
     );
   }
 }
