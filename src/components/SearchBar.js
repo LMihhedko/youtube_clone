@@ -21,7 +21,7 @@ class SearchBar extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <TextField id="standard-search" label="Search..." type="search"  onChange={this.handleChange}></TextField>
+        <TextField fullWidth = {true} id="standard-search" label="Search..." type="search"  onChange={this.handleChange}></TextField>
       </form>
      );
    }  
