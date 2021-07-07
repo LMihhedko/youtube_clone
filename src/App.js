@@ -28,21 +28,22 @@ import Grid from '@material-ui/core/Grid';
     this.setState({selectedVideo: video})
   }
 
+  componentDidMount() {
+    this.handleSubmit('React.js')
+  }
 
   render() {
     return (
       <div>
         <SearchBar onFormSubmit = {this.handleSubmit} ></SearchBar>
         <Grid container spacing={3}>
-          <Grid item xs={6}>
+          <Grid item xs={8}>
             <Paper>
               <VideoDetail video = {this.state.selectedVideo} ></VideoDetail>
             </Paper>
           </Grid>
-          <Grid item xs={6}>
-            <Paper>
+          <Grid item xs={4}>
               <VideoList videos = {this.state.videos} handleVideoSelect = {this.handleVideoSelect}/>
-            </Paper>
           </Grid>
           </Grid>
       </div>

@@ -1,5 +1,17 @@
 import React from 'react';
 import {TextField} from '@material-ui/core';
+import Paper from '@material-ui/core/Paper';
+import { withStyles } from "@material-ui/core/styles";
+
+const useStyles =  theme => ({
+  searchBackground: {
+     padding: '20px',
+     marginBottom:'40px',
+     backgroundColor: 'lightblue',
+  },
+
+});
+
 
 class SearchBar extends React.Component {
   state = {
@@ -19,12 +31,16 @@ class SearchBar extends React.Component {
   }
 
   render() {
+    const { classes } = this.props;
+    
     return (
-      <form onSubmit={this.handleSubmit}>
-        <TextField fullWidth = {true} id="standard-search" label="Search..." type="search"  onChange={this.handleChange}></TextField>
-      </form>
+      <Paper className={classes.searchBackground} elevation={3}>
+        <form onSubmit={this.handleSubmit}>
+          <TextField fullWidth = {true} id="standard-search" label="Video Search" type="search"  onChange={this.handleChange}></TextField>
+        </form>
+      </Paper>
      );
    }  
   } 
 
-export default SearchBar;
+export default withStyles(useStyles)(SearchBar);
