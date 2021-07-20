@@ -1,0 +1,6 @@
+.main {
+  display: flex;
+  overflow: hidden;
+  flex: wrap;
+  background-color: #161523;
+}

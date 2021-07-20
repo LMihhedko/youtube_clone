@@ -1,31 +1,44 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
+import React, {useState} from 'react';
+import "../css/VideoItem.css";
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import IconButton from "@material-ui/core/IconButton";
 
 
-const useStyles = makeStyles({
-    thumbnail: {
-        display:'flex',
-        flexDirection: 'row',
-        marginBottom: '10px',
-    },
 
-    text: {
-        marginLeft:'20px',
-    },
+const VideoItem = ({video, handleVideoSelect, addFavorite, deleteFavorite, isFavorite, favoritesList,
+    setFavoritesList}) => {
+    const isHearted = favoritesList?.includes(video.etag)
 
-    point: {
-        cursor: 'pointer',
-    }
-  });
+    const handleIconClick = () => {
+        if (isHearted) {
+            setFavoritesList(favoritesList?.filter(it => it !== video.etag))
+        } else {
+            setFavoritesList(favoritesList?.concat(video.etag))
+        }
+        addFavorite(video)
+   }
 
-const VideoItem = ({video, handleVideoSelect}) => {
-    const classes = useStyles();
     return (
-        <Card className={classes.thumbnail} onClick={() => handleVideoSelect(video)} >
-            <img className={classes.point} width = '50%' src = {video.snippet.thumbnails.medium.url}/>
-            <h4 className={classes.text}>{video.snippet.title}</h4>
-        </Card>
+        <div className = "card" onClick={() => typeof handleVideoSelect === "function" && handleVideoSelect(video)} >
+            { video && <img  className = "thumbnail" src = {video.snippet?.thumbnails.medium.url}/>}
+            <h4 className = "title"> {video.snippet?.title}</h4>
+            {
+            <IconButton className = 'heartIcon' onClick = {handleIconClick}>
+                {(isFavorite) ? 
+                    (<FavoriteIcon className = "heartColor"/>)
+                    :
+                    ((isHearted) ?
+                        (<FavoriteIcon className="heartColor" />)
+                    :
+                        (<FavoriteBorderIcon />)
+                    )
+                }
+                
+            </IconButton>}
+                  
+        </div>
+        
     )
 }
 

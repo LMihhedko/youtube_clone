@@ -1,0 +1,36 @@
+.card {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 180px;
+  background-color: white;
+  position: relative;
+}
+
+.thumbnail {
+  width: 180px;
+}
+
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.heartIcon {
+  position: absolute;
+  bottom: 10px;
+}
+
+.heartColor {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}

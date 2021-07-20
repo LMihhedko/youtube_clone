@@ -1,0 +1,11 @@
+.videos_container {
+  padding: 20px;
+}
+
+.below {
+  display: flex;
+}
+
+.favoriteContainer {
+  width: 500px;
+}
