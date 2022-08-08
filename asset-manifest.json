@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/sprint_9_Proyecto/static/css/main.68064394.chunk.css",
-    "main.js": "/sprint_9_Proyecto/static/js/main.9e614d23.chunk.js",
-    "main.js.map": "/sprint_9_Proyecto/static/js/main.9e614d23.chunk.js.map",
-    "runtime-main.js": "/sprint_9_Proyecto/static/js/runtime-main.c5428177.js",
-    "runtime-main.js.map": "/sprint_9_Proyecto/static/js/runtime-main.c5428177.js.map",
-    "static/js/2.2be56490.chunk.js": "/sprint_9_Proyecto/static/js/2.2be56490.chunk.js",
-    "static/js/2.2be56490.chunk.js.map": "/sprint_9_Proyecto/static/js/2.2be56490.chunk.js.map",
-    "index.html": "/sprint_9_Proyecto/index.html",
-    "static/css/main.68064394.chunk.css.map": "/sprint_9_Proyecto/static/css/main.68064394.chunk.css.map",
-    "static/js/2.2be56490.chunk.js.LICENSE.txt": "/sprint_9_Proyecto/static/js/2.2be56490.chunk.js.LICENSE.txt",
-    "static/media/avatar.20799d4f.jpg": "/sprint_9_Proyecto/static/media/avatar.20799d4f.jpg",
-    "static/media/react-icon.436f7205.svg": "/sprint_9_Proyecto/static/media/react-icon.436f7205.svg"
+    "main.css": "/youtube_clone/static/css/main.68064394.chunk.css",
+    "main.js": "/youtube_clone/static/js/main.9e614d23.chunk.js",
+    "main.js.map": "/youtube_clone/static/js/main.9e614d23.chunk.js.map",
+    "runtime-main.js": "/youtube_clone/static/js/runtime-main.8061e847.js",
+    "runtime-main.js.map": "/youtube_clone/static/js/runtime-main.8061e847.js.map",
+    "static/js/2.2be56490.chunk.js": "/youtube_clone/static/js/2.2be56490.chunk.js",
+    "static/js/2.2be56490.chunk.js.map": "/youtube_clone/static/js/2.2be56490.chunk.js.map",
+    "index.html": "/youtube_clone/index.html",
+    "static/css/main.68064394.chunk.css.map": "/youtube_clone/static/css/main.68064394.chunk.css.map",
+    "static/js/2.2be56490.chunk.js.LICENSE.txt": "/youtube_clone/static/js/2.2be56490.chunk.js.LICENSE.txt",
+    "static/media/avatar.20799d4f.jpg": "/youtube_clone/static/media/avatar.20799d4f.jpg",
+    "static/media/react-icon.436f7205.svg": "/youtube_clone/static/media/react-icon.436f7205.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c5428177.js",
+    "static/js/runtime-main.8061e847.js",
     "static/js/2.2be56490.chunk.js",
     "static/css/main.68064394.chunk.css",
     "static/js/main.9e614d23.chunk.js"
